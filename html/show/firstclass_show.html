@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>this is a show page</title>
+		
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			#box{
+				position:relative;
+				width:100px;
+				height:100px;
+				background-color:yellow;
+			}
+			button{
+				width:100px;
+				height:30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+		<br/>
+		<hr/>
+		<button id="btn_red">红色</button>&nbsp;&nbsp;<button id="btn_green">绿色</button>&nbsp;&nbsp;<button id="btn_blue">蓝色</button>
+		<br/>
+		<hr/>
+		<button id="btn_left">向左</button>&nbsp;&nbsp;<button id="btn_right">向右</button>
+		
+		<script type="text/javascript">
+			var box = document.getElementById("box");
+			var num = 0;
+			document.getElementById("btn_red").onclick=function(){
+				box.style.backgroundColor="red";
+			}
+			document.getElementById("btn_green").onclick=function(){
+				box.style.backgroundColor="green";
+			}
+			document.getElementById("btn_blue").onclick=function(){
+				box.style.backgroundColor="blue";
+			}
+			document.getElementById("btn_left").onclick=function(){
+				if(num>=10){
+					num-=10;
+					box.style.left=num+"px";
+				}else{
+					alert("已经是最左边了，不能再往左了");
+				}
+				
+			}
+			document.getElementById("btn_right").onclick=function(){
+				num+=10;
+				box.style.left=num+"px";
+			}
+		</script>
+	</body>
+</html>
