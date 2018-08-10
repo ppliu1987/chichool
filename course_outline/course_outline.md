@@ -18,7 +18,12 @@
 	6.网页的构成
 		文字 图片（动态图片）  视频  音频   按钮
 	7.网页的三大组成元素
+		HTML(hyperText markup language)  CSS(cascading style sheet)  JavaScript(js)
 	8.网页三大组件的作用及演示（首课演示文档firstclass_show.html）
+		html + css  可以做出你看到的任何静态网页
+	9.什么是静态网页?什么是动态网页?
+		没有javascript参与的网页就是静态网页
+		通过dynamic_show.html
 	课后总结
 第二课：
 	课前预习：
@@ -31,17 +36,62 @@
 	5.标签分类
 	6.具体标签学习
 		<!DOCTYPE html>
-		<html>
-		<head>
-		<body>
+		<html>--跟标签 只能有一个  所有的只能写它里面
+		<head>--头标签 只能有一个
+		<body>--体标签 只能有一个
 		<meta>
-		<title>
+		<title>--只显示第一个
+		<!-- -->
+		<br/>
+		<hr/>
 		<h1>--<h6>
 		<p>
 	7.单双标签的寓意讲解
 	课后总结：
 第三课：
 	课前预习：
+	ctrl+c   ctrl+s  ctrl+v
+三课
+都是文字相关的标签处理
+<abbr title="People's Republic of China">PRC</abbr>缩写
+<acronym title="Test Page Show" draggable="true">TPS</acronym>首字母缩写
+<address>语义斜体    	定义文档作者或拥有者的联系信息。
+<i>语义斜体
+<b>	定义粗体文本。
+<bdi>定义文本的文本方向，使其脱离其周围文本的方向设置。
+<bdo dir="rtl">Here is some Hebrew text</bdo>定义文字方向。(ltr或者rtl)
+<big>定义大号文本。
+<blockquote>	定义长的引用。元素前后添加了换行，并增加了外边距。
+<center>	不赞成使用。定义居中文本。
+<cite>	定义引用(citation)。
+<code>	定义计算机代码文本。
+<del>	定义被删除文本。
+<dfn>	定义定义项目。
+<em>	定义强调文本。
+<font>	不赞成使用。定义文本的字体、尺寸和颜色
+<i>	定义斜体文本。
+<ins>	定义被插入文本。
+<kbd>	定义键盘文本。
+<mark>	定义有记号的文本。
+<meter>	定义预定义范围内的度量。
+<pre>	定义预格式文本。
+<progress>	定义任何类型的任务的进度。
+<q>	定义短的引用。
+<rp>	定义若浏览器不支持 ruby 元素显示的内容。
+<rt>	定义 ruby 注释的解释。
+<ruby>	定义 ruby 注释。
+<s>	不赞成使用。定义加删除线的文本。
+<samp>	定义计算机代码样本。
+<small>	定义小号文本。
+<strike>	不赞成使用。定义加删除线文本。
+<strong>	定义语气更为强烈的强调文本。
+<sup>	定义上标文本。
+<sub>	定义下标文本。
+<time>	定义日期/时间。
+<tt>	定义打字机文本。
+<u>	不赞成使用。定义下划线文本。
+<var>	定义文本的变量部分。
+<wbr>	定义可能的换行符。主要用于英文https://blog.csdn.net/yaodebian/article/details/72886243
 	课后总结：
 第四课：
 	课前预习：
@@ -124,3 +174,6 @@
 第三十课：
 	课前预习：
 	课后总结：
+	
+	
+属性,在js之前加上属性讲解
