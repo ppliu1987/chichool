@@ -1,3 +1,9 @@
+复习
+互动
+幽默
+总结
+成果
+
 第一课：
 	1.欢迎
 	2.未来，黑客及互联网前进
@@ -25,11 +31,13 @@
 		没有javascript参与的网页就是静态网页
 		通过dynamic_show.html
 	课后总结
+	课堂成果
 第二课：
 	课前预习：
 	1.文件
 	2.文件扩展名
-		文件的组成=文件名（给人看的）+扩展名（给电脑看的）
+		文件的组成=文件名（给人看的）+扩展名(也叫后缀)（给电脑看的）
+		.后缀是不影响文件的,只影响电脑去读这个文件
 		.pptx .xlsx .docx .txt  .jpg .mp3 .mp4  .html  .jsp  自定义扩展名 .aaa .bbb
 	3.编辑器
 	4.标签
@@ -37,15 +45,15 @@
 	6.具体标签学习
 		<!DOCTYPE html>
 		<html>--跟标签 只能有一个  所有的只能写它里面
-		<head>--头标签 只能有一个
-		<body>--体标签 只能有一个
-		<meta>
+		<head>--头标签 只能有一个  他里面的内容是展示给电脑看的
+		<body>--体标签 只能有一个  他里面的内容是展示给人看的
+		<meta>  不写meta展示乱码
 		<title>--只显示第一个
 		<!-- -->
-		<br/>
-		<hr/>
-		<h1>--<h6>
-		<p>
+		<br/> blank row
+		<hr/>horizontal rule
+		<h1>--<h6>独占一行,字体加粗,字体变大
+		<p>this is a paragraph!</p>独占一行
 	7.单双标签的寓意讲解
 	8.ctrl+c   ctrl+s  ctrl+v
 	课后总结：
@@ -53,8 +61,10 @@
 	课前预习：
 	都是文字相关的标签处理
 	
+	行内元素,块内元素
+	
 	特殊符号
-	&nbsp;  &lt;  &gt;
+	空格,回车是英文单词分隔符  &nbsp;  &lt;  &gt;   https://www.jb51.net/onlineread/htmlchar.htm
 	
 	<abbr title="People's Republic of China">PRC</abbr>缩写
 	<acronym title="Test Page Show" draggable="true">TPS</acronym>首字母缩写
@@ -67,13 +77,16 @@
 	<blockquote>	定义长的引用。元素前后添加了换行，并增加了外边距。
 	<center>	不赞成使用。定义居中文本。
 	<del>	定义被删除文本。
-	<em>	定义强调文本。
 	<font>	不赞成使用。定义文本的字体、尺寸和颜色
 	<mark>	定义有记号的文本。
 	<meter>	定义预定义范围内的度量。
 	<q>	定义短的引用。
 	<small>	定义小号文本。
-	<strong>	定义语气更为强烈的强调文本。
+	
+	标签嵌套<em><strong>斜体加粗<strong></em>注意标签包裹方式
+	
+	<em>	定义强调文本。斜体
+	<strong>	定义语气更为强烈的强调文本。 加粗
 	<sup>	定义上标文本。&nbsp;m<sup>2</sub>
 	<sub>	定义下标文本。O<sub>2</sub>
 	<time>	定义日期/时间。
