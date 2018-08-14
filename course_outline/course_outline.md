@@ -98,6 +98,7 @@
 第五课：
 	课前预习：
 	标签的name属性不能用中文
+	form_show.html
 	<form>	定义供用户输入的 HTML 表单。
 	<input>	定义输入控件。
 	<button>	定义按钮。
@@ -139,9 +140,76 @@
 	课后总结：
 第九课：
 	课前预习：
+	font	在一个声明中设置所有字体属性。	1
+	font-family	规定文本的字体系列。	1
+	font-size	规定文本的字体尺寸。	1
+	font-size-adjust	为元素规定 aspect 值。	2
+	font-stretch	收缩或拉伸当前的字体系列。	2
+	font-style	规定文本的字体样式。	1
+	font-variant	规定是否以小型大写字母的字体显示文本。	1
+	font-weight	规定字体的粗细。
+	
+	background	在一个声明中设置所有的背景属性。	1
+	background-attachment	设置背景图像是否固定或者随着页面的其余部分滚动。	1
+	background-color	设置元素的背景颜色。	1
+	background-image	设置元素的背景图像。	1
+	background-position	设置背景图像的开始位置。	1
+	background-repeat	设置是否及如何重复背景图像。	1
+	background-clip	规定背景的绘制区域。	3
+	background-origin	规定背景图片的定位区域。	3
+	background-size	规定背景图片的尺寸。	3
 	课后总结：
 第十课：
 	课前预习：
+	border	在一个声明中设置所有的边框属性。	1
+	border-bottom	在一个声明中设置所有的下边框属性。	1
+	border-bottom-color	设置下边框的颜色。	2
+	border-bottom-style	设置下边框的样式。	2
+	border-bottom-width	设置下边框的宽度。	1
+	border-color	设置四条边框的颜色。	1
+	border-left	在一个声明中设置所有的左边框属性。	1
+	border-left-color	设置左边框的颜色。	2
+	border-left-style	设置左边框的样式。	2
+	border-left-width	设置左边框的宽度。	1
+	border-right	在一个声明中设置所有的右边框属性。	1
+	border-right-color	设置右边框的颜色。	2
+	border-right-style	设置右边框的样式。	2
+	border-right-width	设置右边框的宽度。	1
+	border-style	设置四条边框的样式。	1
+	border-top	在一个声明中设置所有的上边框属性。	1
+	border-top-color	设置上边框的颜色。	2
+	border-top-style	设置上边框的样式。	2
+	border-top-width	设置上边框的宽度。	1
+	border-width	设置四条边框的宽度。	1
+	outline	在一个声明中设置所有的轮廓属性。	2
+	outline-color	设置轮廓的颜色。	2
+	outline-style	设置轮廓的样式。	2
+	outline-width	设置轮廓的宽度。	2
+	border-bottom-left-radius	定义边框左下角的形状。	3
+	border-bottom-right-radius	定义边框右下角的形状。	3
+	border-image	简写属性，设置所有 border-image-* 属性。	3
+	border-image-outset	规定边框图像区域超出边框的量。	3
+	border-image-repeat	图像边框是否应平铺(repeated)、铺满(rounded)或拉伸(stretched)。	3
+	border-image-slice	规定图像边框的向内偏移。	3
+	border-image-source	规定用作边框的图片。	3
+	border-image-width	规定图片边框的宽度。	3
+	border-radius	简写属性，设置所有四个 border-*-radius 属性。	3
+	border-top-left-radius	定义边框左上角的形状。	3
+	border-top-right-radius	定义边框右下角的形状。	3
+	box-decoration-break		3
+	box-shadow	向方框添加一个或多个阴影。	3
+	
+	margin	在一个声明中设置所有外边距属性。	1
+	margin-bottom	设置元素的下外边距。	1
+	margin-left	设置元素的左外边距。	1
+	margin-right	设置元素的右外边距。	1
+	margin-top	设置元素的上外边距。
+	
+	padding	在一个声明中设置所有内边距属性。	1
+	padding-bottom	设置元素的下内边距。	1
+	padding-left	设置元素的左内边距。	1
+	padding-right	设置元素的右内边距。	1
+	padding-top	设置元素的上内边距。
 	课后总结：
 第十一课：
 	课前预习：
