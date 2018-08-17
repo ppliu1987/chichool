@@ -68,19 +68,6 @@
 	特殊符号
 	空格,回车是英文单词分隔符  &nbsp;  &lt;  &gt;   https://www.jb51.net/onlineread/htmlchar.htm
 	
-	<wbr>	定义可能的换行符。主要用于英文https://blog.csdn.net/yaodebian/article/details/72886243
-	<abbr title="People's Republic of China">PRC</abbr>缩写
-	<acronym title="Test Page Show" draggable="true">TPS</acronym>首字母缩写
-	<address>语义斜体    	定义文档作者或拥有者的联系信息。
-	
-	<bdi>定义文本的文本方向，使其脱离其周围文本的方向设置。
-	<bdo dir="rtl">Here is some Hebrew text</bdo>定义文字方向。(ltr或者rtl)
-	<q>	定义短的引用。
-	<blockquote>	定义长的引用。元素前后添加了换行，并增加了外边距。
-	<textarea>	定义多行的文本输入控件。
-	课后总结：
-第四课：
-	课前预习：
 	标签嵌套<em><strong>斜体加粗<strong></em>注意标签包裹方式.谁嵌套谁无所谓
 	<small>	定义小号文本。
 	<big>定义大号文本。
@@ -93,9 +80,9 @@
 	<u>	不赞成使用。定义下划线文本。
 	<center>	不赞成使用。定义居中文本。
 	<del>	定义被删除文本。
-	<mark>	定义有记号的文本。
+	<mark>	定义有记号的文本。。
 	课后总结：
-第五课：
+第四课：
 	课前预习：
 	标签的name属性不能用中文
 	form_show.html
@@ -103,31 +90,11 @@
 	<input>	定义输入控件。
 	<button>	定义按钮。
 	<select>	定义选择列表（下拉列表）。
-	<optgroup>	定义选择列表中相关选项的组合。
 	<option>	定义选择列表中的选项。
 	<label>	定义 input 元素的标注。
-	<datalist>  定义下拉列表。
+	<radio>  定义单选按钮
 	课后总结：
-第六课：
-	课前预习：
-	<img>	定义图像。
-	<audio>	定义声音内容。
-	<source>	定义媒介源。
-	<track>	定义用在媒体播放器中的文本轨道。
-	<video>	定义视频。
-	<a>	定义锚。
-	课后总结：
-第七课：
-	课前预习：
-	<ul>	定义无序列表。
-	<ol>	定义有序列表。
-	<li>	定义列表的项目。
-	<dir>	不赞成使用。定义目录列表。
-	<dl>	定义定义列表。
-	<dt>	定义定义列表中的项目。
-	<dd>	定义定义列表中项目的描述。
-	课后总结：
-第八课：
+第五课：
 	课前预习：
 	<table>	定义表格
 	<caption>	定义表格标题。
@@ -136,10 +103,33 @@
 	<td>	定义表格中的单元。
 	<div>	定义文档中的节。
 	<span>	定义文档中的节。
-	<section>	定义 section。
 	课后总结：
-第九课：
+第六课：
 	课前预习：
+	<ul>	定义无序列表。
+	<ol>	定义有序列表。
+	<li>	定义列表的项目。
+	<img>	定义图像。
+	<audio>	定义声音内容。
+	<source>	定义媒介源。
+	<track>	定义用在媒体播放器中的文本轨道。
+	<video>	定义视频。
+	<a>	定义锚。
+	引入css
+	课后总结：
+第七课：
+	课前预习：
+	css的4中引入方式
+		1.内联样式,行内样式-耦合,代码冗余,不易维护
+		2.内部样式,比行内样式灵活,代码与HTML文档样式耦合,只能装饰一个HTML文档
+		3.链接外部样式文件link .css文件  推荐使用
+		4.导入外部样式文档,<style>@import url("样式文件路径") 或者  @import "样式文件路径"</style>  会造成闪屏,不推荐使用
+		权重内联>内部>import>link
+	
+	css选择器
+		class选择器,class属性值可以有多个,用空格隔开
+		选择器的权重
+	属性名="属性值"
 	font	在一个声明中设置所有字体属性。	1
 	font-family	规定文本的字体系列。	1
 	font-size	规定文本的字体尺寸。	1
@@ -159,8 +149,14 @@
 	background-origin	规定背景图片的定位区域。	3
 	background-size	规定背景图片的尺寸。	3
 	课后总结：
-第十课：
+第八课：
 	课前预习：
+	行内元素  块内元素
+	盒子模型  margin-border-padding
+	
+	width: 宽
+	height:长
+	
 	border	在一个声明中设置所有的边框属性。	1
 	border-bottom	在一个声明中设置所有的下边框属性。	1
 	border-bottom-color	设置下边框的颜色。	2
@@ -210,6 +206,16 @@
 	padding-left	设置元素的左内边距。	1
 	padding-right	设置元素的右内边距。	1
 	padding-top	设置元素的上内边距。
+	课后总结：
+第九课：
+	课前预习：
+	
+	
+	
+	课后总结：
+第十课：
+	课前预习：
+	
 	课后总结：
 第十一课：
 	课前预习：
