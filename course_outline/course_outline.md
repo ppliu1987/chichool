@@ -119,6 +119,7 @@
 	课后总结：
 第七课：
 	课前预习：
+	css文件是以.css结尾
 	css的4中引入方式
 		1.内联样式,行内样式-耦合,代码冗余,不易维护
 		2.内部样式,比行内样式灵活,代码与HTML文档样式耦合,只能装饰一个HTML文档
@@ -127,27 +128,28 @@
 		权重内联>内部>import>link
 	
 	css选择器
+		id选择器
 		class选择器,class属性值可以有多个,用空格隔开
-		选择器的权重
+		标签选择器
+		*通配符选择器
+		选择器的权重原则--最小范围原则
 	属性名="属性值"
 	font	在一个声明中设置所有字体属性。	1
 	font-family	规定文本的字体系列。	1
 	font-size	规定文本的字体尺寸。	1
-	font-size-adjust	为元素规定 aspect 值。	2
-	font-stretch	收缩或拉伸当前的字体系列。	2
 	font-style	规定文本的字体样式。	1
-	font-variant	规定是否以小型大写字母的字体显示文本。	1
 	font-weight	规定字体的粗细。
 	
+	color	设置文本的颜色。	1
+	letter-spacing	设置字符间距。	1
+	line-height	设置行高。	1
+	text-align	规定文本的水平对齐方式。
+	
+	opacity	规定元素的不透明级别。
 	background	在一个声明中设置所有的背景属性。	1
-	background-attachment	设置背景图像是否固定或者随着页面的其余部分滚动。	1
 	background-color	设置元素的背景颜色。	1
 	background-image	设置元素的背景图像。	1
-	background-position	设置背景图像的开始位置。	1
-	background-repeat	设置是否及如何重复背景图像。	1
-	background-clip	规定背景的绘制区域。	3
-	background-origin	规定背景图片的定位区域。	3
-	background-size	规定背景图片的尺寸。	3
+	
 	课后总结：
 第八课：
 	课前预习：
@@ -195,6 +197,12 @@
 	box-decoration-break		3
 	box-shadow	向方框添加一个或多个阴影。	3
 	
+	
+	课后总结：
+第九课：
+	课前预习：
+	选择器
+	
 	margin	在一个声明中设置所有外边距属性。	1
 	margin-bottom	设置元素的下外边距。	1
 	margin-left	设置元素的左外边距。	1
@@ -207,15 +215,9 @@
 	padding-right	设置元素的右内边距。	1
 	padding-top	设置元素的上内边距。
 	课后总结：
-第九课：
-	课前预习：
-	
-	
-	
-	课后总结：
 第十课：
 	课前预习：
-	
+	position定位
 	课后总结：
 第十一课：
 	课前预习：
