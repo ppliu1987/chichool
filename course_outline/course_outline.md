@@ -136,14 +136,28 @@
 	属性名="属性值"
 	font	在一个声明中设置所有字体属性。	1
 	font-family	规定文本的字体系列。	1
-	font-size	规定文本的字体尺寸。	1
-	font-style	规定文本的字体样式。	1
+	font-size	规定文本的字体尺寸。	1默认16px;设置的是字体的高
+	font-style	规定文本的字体样式。	1italic
 	font-weight	规定字体的粗细。
 	
 	color	设置文本的颜色。	1
+		颜色的三种方式
+		
+		透明色:transparent
+		
+			土鳖式(英文单词)
+			颜色代码
+			颜色函数rgb(0-255,0-255,0-255)
+	
 	letter-spacing	设置字符间距。	1
 	line-height	设置行高。	1
+		单行文本垂直居中,line-height=height让文本高度等于行高
 	text-align	规定文本的水平对齐方式。
+	text-indent: 2em 首行缩进(两字体)
+	
+	text-decoration: line-through;none;underline;overline
+	
+	cursor:pointer;help;copy;改变鼠标样式
 	
 	opacity	规定元素的不透明级别。
 	background	在一个声明中设置所有的背景属性。	1
@@ -153,11 +167,36 @@
 	课后总结：
 第八课：
 	课前预习：
-	行内元素  块内元素
+	display
+	行内元素  inline
+		内容决定元素所占位置
+		不可以通过css改变宽高
+	块内元素 block
+		独占一行
+		可以通过css改变宽高
+	行级块元素  img
+		内容决定大小
+		可以通过css改变宽高
 	盒子模型  margin-border-padding
+	
+	选择器
+		并列选择器(标签在前)div.demo
+		element,element	div,p	选择所有 <div> 元素和所有 <p> 元素。	1分组选择器
+		element element	div p	选择 <div> 元素内部的所有 <p> 元素。	1父子选择器
+		element>element	div>p	选择父元素为 <div> 元素的所有 <p> 元素。	2直接子元素选择器
+		element+element	div+p	选择紧接在 <div> 元素之后的所有 <p> 元素。	2
+		[attribute]	[target]	选择带有 target 属性所有元素。	2
+		[attribute=value]	[target=_blank]	选择 target="_blank" 的所有元素。	2
+		[attribute~=value]	[title~=flower]	选择 title 属性包含单词 "flower" 的所有元素。	2
+		[attribute|=value]	[lang|=en]	选择 lang 属性值以 "en" 开头的所有元素。
 	
 	width: 宽
 	height:长
+	
+	top
+	bottom
+	left
+	right
 	
 	border	在一个声明中设置所有的边框属性。	1
 	border-bottom	在一个声明中设置所有的下边框属性。	1
@@ -202,7 +241,36 @@
 第九课：
 	课前预习：
 	选择器
-	
+		:hover	a:hover	选择鼠标指针位于其上的链接。	1
+		:focus	input:focus	选择获得焦点的 input 元素。	2
+		:first-letter	p:first-letter	选择每个 <p> 元素的首字母。	1
+		:first-line	p:first-line	选择每个 <p> 元素的首行。	1
+		:first-child	p:first-child	选择属于父元素的第一个子元素的每个 <p> 元素。	2
+		:before	p:before	在每个 <p> 元素的内容之前插入内容。	2
+		:after	p:after	在每个 <p> 元素的内容之后插入内容。	2
+		:lang(language)	p:lang(it)	选择带有以 "it" 开头的 lang 属性值的每个 <p> 元素。	2
+		element1~element2	p~ul	选择前面有 <p> 元素的每个 <ul> 元素。	3
+		[attribute^=value]	a[src^="https"]	选择其 src 属性值以 "https" 开头的每个 <a> 元素。	3
+		[attribute$=value]	a[src$=".pdf"]	选择其 src 属性以 ".pdf" 结尾的所有 <a> 元素。	3
+		[attribute*=value]	a[src*="abc"]	选择其 src 属性中包含 "abc" 子串的每个 <a> 元素。	3
+		:first-of-type	p:first-of-type	选择属于其父元素的首个 <p> 元素的每个 <p> 元素。	3
+		:last-of-type	p:last-of-type	选择属于其父元素的最后 <p> 元素的每个 <p> 元素。	3
+		:only-of-type	p:only-of-type	选择属于其父元素唯一的 <p> 元素的每个 <p> 元素。	3
+		:only-child	p:only-child	选择属于其父元素的唯一子元素的每个 <p> 元素。	3
+		:nth-child(n)	p:nth-child(2)	选择属于其父元素的第二个子元素的每个 <p> 元素。	3
+		:nth-last-child(n)	p:nth-last-child(2)	同上，从最后一个子元素开始计数。	3
+		:nth-of-type(n)	p:nth-of-type(2)	选择属于其父元素第二个 <p> 元素的每个 <p> 元素。	3
+		:nth-last-of-type(n)	p:nth-last-of-type(2)	同上，但是从最后一个子元素开始计数。	3
+		:last-child	p:last-child	选择属于其父元素最后一个子元素每个 <p> 元素。	3
+		:root	:root	选择文档的根元素。	3
+		:empty	p:empty	选择没有子元素的每个 <p> 元素（包括文本节点）。	3
+		:target	#news:target	选择当前活动的 #news 元素。	3
+		:enabled	input:enabled	选择每个启用的 <input> 元素。	3
+		:disabled	input:disabled	选择每个禁用的 <input> 元素	3
+		:checked	input:checked	选择每个被选中的 <input> 元素。	3
+		:not(selector)	:not(p)	选择非 <p> 元素的每个元素。	3
+		::selection	::selection	选择被用户选取的元素部分。
+			
 	margin	在一个声明中设置所有外边距属性。	1
 	margin-bottom	设置元素的下外边距。	1
 	margin-left	设置元素的左外边距。	1
@@ -218,6 +286,7 @@
 第十课：
 	课前预习：
 	position定位
+	图片旋转
 	课后总结：
 第十一课：
 	课前预习：
