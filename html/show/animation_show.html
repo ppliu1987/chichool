@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div {
+				width: 100px;
+				height: 100px;
+				position: relative;
+				background-color: #f00;
+				animation: firstplay 5s infinite;
+				/*绑定各个浏览器*/
+				/* Firefox */
+				-moz-animation: firstplay 5s infinite;
+				/* Safari 和 Chrome */
+				-webkit-animation: firstplay 5s infinite;
+				/*opera*/
+				-o-animation: firstplay 5s infinite;
+			}
+			/*@keyframes 绑定动画的执行函数*/
+			
+			@keyframes firstplay {
+				from {
+					background: red;
+					left: 0
+				}
+				to {
+					background: blue;
+					left: 200px;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div></div>
+
+		<script type="text/javascript">
+		</script>
+	</body>
+
+</html>
