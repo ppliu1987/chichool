@@ -26,7 +26,7 @@
 	6.网页的构成
 		文字 图片（动态图片）  视频  音频   按钮
 	7.网页的三大组成元素
-		HTML(hyperText markup language)  CSS(cascading style sheet)  JavaScript(js)
+		HTML(hyperText markup language)标签  CSS(cascading style sheet)标签属性  JavaScript(js)改变标签属性
 	8.网页三大组件的作用及演示（首课演示文档firstclass_show.html）
 		html + css  可以做出你看到的任何静态网页
 	9.什么是静态网页?什么是动态网页?
@@ -119,6 +119,8 @@
 	课后总结：
 第七课：
 	课前预习：
+	css样式就是设置标签的属性
+		标签属性
 	css文件是以.css结尾
 	css的4中引入方式
 		1.内联样式,行内样式-耦合,代码冗余,不易维护
@@ -299,6 +301,7 @@
 	课后总结：
 第十三课：
 	课前预习：
+	js的本质就是改变标签的属性
 	javascript是当下最流行的编程语言
 	JavaScript于1995年由网景公司的布兰登  艾奇(Brendan Eich)设计而成的,因为对js的支持,网景公司的浏览器Navigator一直占领着浏览器市场的绝大部分份额,而后因为微软公司的
 	IE浏览器因为也慢慢支持的js语言,所以才慢慢打败网景的Navigator浏览器,主宰浏览器市场.

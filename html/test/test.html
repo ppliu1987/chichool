@@ -5,29 +5,9 @@
 		<title>欢迎来到JavaScript的世界</title>
 		
 		<style type="text/css">
-			#dv{
-				width:100px;
-				height:100px;
-				background:rgb(200,0,0);
-				margin:0 auto;
-			}
-			#btn{
-				width:70px;
-				height:40px;
-				background:rgb(0,0,200);
-				margin:0 40%;
-			}
+			
 		</style>
 		
-		<script type="text/javascript">
-			document.getElementById("btn").onclick=function (){
-				document.getElementById("dv").style.width="200px";
-				document.getElementById("dv").style.height="200px";
-				document.getElementById("dv").style.backgroundColor="rgb(0,200,0)";
-				var today = new Date();
-				alert(today);
-			}
-		</script>
 	</head>
 	<body>
 		
@@ -45,11 +25,16 @@
         			宽  高  背景色
         			元素.style.样式=值
         -->
-		
-		<div id="dv"></div>
-		<hr />
-		<button id="btn">按钮</button>
+		<input type="button" id="in" />
 		
 		
+		<script type="text/javascript">
+			window.onload=function(){
+				console.log(document.getElementById("in").type);
+				document.getElementById("in").type="text";
+				console.log(document.getElementById("in").type);
+				
+			}
+		</script>
 	</body>
 </html>

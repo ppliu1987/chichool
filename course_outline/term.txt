@@ -24,4 +24,79 @@ js注释
 	 */
 	
 	
+window.onload什么时候用?
+	当js代码需要获取页面元素(标签)的时候,如果这script放在元素的前面,那就需要window.onload
+	如果script是放在了元素后面,那就不需要加window.onload
+js代码建议写在</body>结束标签之前
+
+常量
+变量
+	1.变量的声明
+	2.变量的命名规则
+		a.变量名可以由字母  数字  下划线(_)   美元符号($)组合而成
+		b.不允许数字开始
+		c.不允许使用关键字和保留字作为编码名    https://www.runoob.com/js/js-reserved.html
+			i.关键字
+			ii.保留字
+				var  this  if   else  for
+	3.变量的赋值
+		var 变量名 = 常量值;
+	4.变量作用
+		代码复用  单行复用
+	5.变量的作用范围
+		全局变量
+		局部变量
+数据类型
+	类型:
+		字符型
+		数值型
+		布尔型
+		undefinded
+		null
+		object
+	引用类型
+		object  
+		array
+		function	
+运算符
+表达式
+控制流程
+	if
+	if...else...
+	if...else if...
+	
+	switch
+	
+	while
+	do...while
+	
+	for
+	
+	break
+	continue
+事件	
+
+函数
+	函数定义
+		function 函数名(){
+			函数代码
+		}
+	函数作用
+		代码复用
+	函数调用
+		函数名();
+	函数分类
+		命名函数
+		匿名函数
+			匿名函数不能直接声明
+			匿名函数的调用:匿名函数是被直接赋值给事件
+属性操作
+	标签属性
+		元素的(.)属性
+		元素.属性名
+		['']  的   btn.style['font-size']   btn.style.fontSize
+		带横杠的属性可以有两种方式:1.去掉横杠,横杠后的单词第一个字母大写2.用中括号的方式
+对象...面向对象
+	对象属性
+	对象方法
 	
