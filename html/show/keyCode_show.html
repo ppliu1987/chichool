@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>欢迎来到JavaScript的世界</title>
+		
+		<style type="text/css">
+			#dv1{
+				background:#ff0;
+				width:100px;
+				height:100px;
+				
+			}
+			#dv2{
+				background:#f00;
+				width:100px;
+				height:100px;
+				
+			}
+			#dv3{
+				background:#00f;
+				width:100px;
+				height:100px;
+				
+			}
+			#dv4{
+				background:#0f0;
+				width:100px;
+				height:100px;
+				
+			}
+		</style>
+		
+	</head>
+	<body>
+		
+		<!--
+        	作者：ppliu1987@126.com
+        	时间：2018-08-27
+        	描述：
+        	需求:点击按钮,改变div的宽  高  背景色
+        	
+        	步骤
+        		1.拿到按钮
+        		2.给按钮添加点击事件
+        		3.拿到div
+        		4.修改div的属性
+        			宽  高  背景色
+        			元素.style.样式=值
+        -->
+        <div id="dv1" >div 1</div>
+        <div id="dv2">div 2</div>
+        <div id="dv3">div 3</div>
+        <div id="dv4">div 4</div>
+        <input type="text"  onkeypress="keyAct(event)"/> 
+        
+		
+		<script>
+			
+			function keyAct(event){
+				var x = event.keyCode;
+				if(x==119){
+					alert(1);
+					document.getElementById("dv1").style.backgroundColor="purple";
+				}
+				if(x==100){
+					alert(2);
+					document.getElementById("dv2").style.backgroundColor="purple";
+				}
+				if(x==97){
+					alert(3);
+					document.getElementById("dv3").style.backgroundColor="purple";
+				}
+				if(x==115){
+					alert(4);
+					document.getElementById("dv4").style.backgroundColor="purple";
+				}
+			}
+		</script>
+	</body>
+</html>

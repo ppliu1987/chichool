@@ -78,7 +78,11 @@ js代码建议写在</body>结束标签之前
 	break
 	continue
 事件	
-
+	事件类型
+		鼠标事件
+		键盘事件keyCode
+	事件绑定方式
+		bind
 函数
 	函数定义
 		function 函数名(){
