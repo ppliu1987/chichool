@@ -82,7 +82,8 @@ js代码建议写在</body>结束标签之前
 		鼠标事件
 		键盘事件keyCode
 	事件绑定方式
-		bind
+		bind   call   apply
+		addEventListener()
 函数
 	函数定义
 		function 函数名(){
