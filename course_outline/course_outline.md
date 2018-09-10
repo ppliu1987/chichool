@@ -100,6 +100,9 @@
 	课后总结：
 第四课：
 	前情提要：
+	编辑器
+	常用属性
+		id class name value type
 	标签的name属性不能用中文
 	form_show.html
 	<form>	定义供用户输入的 HTML 表单。
