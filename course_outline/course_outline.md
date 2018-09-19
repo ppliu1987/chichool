@@ -16,6 +16,10 @@
 贪吃蛇
 2048
 
+*一星是知道了解即可
+**二星要求记住
+***三星是重点
+
 第一课：
 	1.欢迎  相互认识，自我介绍
 	2.为什么学编程
@@ -125,6 +129,7 @@
 	<tr>	定义表格中的行。
 	<td>	定义表格中的单元。
 	<div>	定义文档中的节。
+	<section>
 	<span>	定义文档中的节。
 	课后总结：
 第六课：
@@ -153,8 +158,8 @@
 		权重内联>内部>import>link
 	
 	css选择器
-		id选择器
-		class选择器,class属性值可以有多个,用空格隔开
+		id选择器  含义一个元素一个id
+		class选择器,class属性值可以有多个,用空格隔开(含义:元素属于哪一类,可以属于多类)
 		标签选择器
 		*通配符选择器
 		选择器的权重原则--最小范围原则
@@ -180,14 +185,9 @@
 	text-align	规定文本的水平对齐方式。
 	text-indent: 2em 首行缩进(两字体)
 	
-	text-decoration: line-through;none;underline;overline
+	text-decoration: line-through;none;underline;overline(综合<del>标签,讲解结构,样式,行为相分离)
 	
-	cursor:pointer;help;copy;改变鼠标样式
 	
-	opacity	规定元素的不透明级别。
-	background	在一个声明中设置所有的背景属性。	1
-	background-color	设置元素的背景颜色。	1
-	background-image	设置元素的背景图像。	1
 	
 	课后总结：
 第八课：
@@ -214,6 +214,14 @@
 		[attribute=value]	[target=_blank]	选择 target="_blank" 的所有元素。	2
 		[attribute~=value]	[title~=flower]	选择 title 属性包含单词 "flower" 的所有元素。	2
 		[attribute|=value]	[lang|=en]	选择 lang 属性值以 "en" 开头的所有元素。
+	
+	
+	cursor:pointer;help;copy;改变鼠标样式
+	
+	opacity	规定元素的不透明级别。
+	background	在一个声明中设置所有的背景属性。	1
+	background-color	设置元素的背景颜色。	1
+	background-image	设置元素的背景图像。	1
 	
 	width: 宽
 	height:长
