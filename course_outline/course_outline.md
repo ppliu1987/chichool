@@ -123,30 +123,7 @@
 	预告
 第五课：
 	前情提要：
-	<table>	定义表格
-	<caption>	定义表格标题。
-	<th>	定义表格中的表头单元格。
-	<tr>	定义表格中的行。
-	<td>	定义表格中的单元。
-	<div>	定义文档中的节。
-	<section>
-	<span>	定义文档中的节。
-	课后总结：
-第六课：
-	前情提要：
-	<ul>	定义无序列表。
-	<ol>	定义有序列表。
-	<li>	定义列表的项目。
-	<img>	定义图像。
-	<audio>	定义声音内容。
-	<source>	定义媒介源。
-	<track>	定义用在媒体播放器中的文本轨道。
-	<video>	定义视频。
-	<a>	定义锚。
-	引入css
-	课后总结：
-第七课：
-	前情提要：
+	
 	标签属性
 	css样式就是设置标签的属性
 	css文件是以.css结尾
@@ -187,22 +164,9 @@
 	
 	text-decoration: line-through;none;underline;overline(综合<del>标签,讲解结构,样式,行为相分离)
 	
-	
-	
 	课后总结：
-第八课：
+第六课：
 	前情提要：
-	display
-	行内元素  inline
-		内容决定元素所占位置
-		不可以通过css改变宽高
-	块内元素 block
-		独占一行
-		可以通过css改变宽高
-	行级块元素  img
-		内容决定大小
-		可以通过css改变宽高
-	盒子模型  margin-border-padding
 	
 	选择器
 		并列选择器(标签在前)div.demo
@@ -216,10 +180,28 @@
 		[attribute|=value]	[lang|=en]	选择 lang 属性值以 "en" 开头的所有元素。
 	
 	
-	cursor:pointer;help;copy;改变鼠标样式
+	display
+	行内元素  inline
+		内容决定元素所占位置
+		不可以通过css改变宽高
+	块内元素 block
+		独占一行
+		可以通过css改变宽高
+	行级块元素  img
+		内容决定大小
+		可以通过css改变宽高
+	
+	行级标签
+	<a>  <span>	定义文档中的节。
+	
+	块级标签
+	<p>
+	<h1>-<h6>
+	<div>	定义文档中的节。
+	<section>
 	
 	opacity	规定元素的不透明级别。
-	background	在一个声明中设置所有的背景属性。	1
+	background	在一个声明中设置所有的背景属性。	1-css版本
 	background-color	设置元素的背景颜色。	1
 	background-image	设置元素的背景图像。	1
 	
@@ -230,6 +212,12 @@
 	bottom
 	left
 	right
+	
+	
+	盒子模型  margin-border-padding
+	
+	cursor:pointer;help;copy;改变鼠标样式
+	
 	
 	border	在一个声明中设置所有的边框属性。	1
 	border-bottom	在一个声明中设置所有的下边框属性。	1
@@ -251,6 +239,8 @@
 	border-top-style	设置上边框的样式。	2
 	border-top-width	设置上边框的宽度。	1
 	border-width	设置四条边框的宽度。	1
+	
+	
 	outline	在一个声明中设置所有的轮廓属性。	2
 	outline-color	设置轮廓的颜色。	2
 	outline-style	设置轮廓的样式。	2
@@ -270,39 +260,60 @@
 	box-shadow	向方框添加一个或多个阴影。	3
 	
 	
+	引入css
+	课后总结：
+第七课：
+	前情提要：
+	
+	<ul>	定义无序列表。
+	<ol>	定义有序列表。
+	<li>	定义列表的项目。
+	
+	<audio>	定义声音内容。
+	<source>	定义媒介源。
+	<track>	定义用在媒体播放器中的文本轨道。
+	<video>	定义视频。
+	
+	课后总结：
+第八课：
+	前情提要：
+	
+	
+	
 	课后总结：
 第九课：
 	前情提要：
 	选择器
-		:hover	a:hover	选择鼠标指针位于其上的链接。	1
-		:focus	input:focus	选择获得焦点的 input 元素。	2
-		:first-letter	p:first-letter	选择每个 <p> 元素的首字母。	1
-		:first-line	p:first-line	选择每个 <p> 元素的首行。	1
-		:first-child	p:first-child	选择属于父元素的第一个子元素的每个 <p> 元素。	2
-		:before	p:before	在每个 <p> 元素的内容之前插入内容。	2
-		:after	p:after	在每个 <p> 元素的内容之后插入内容。	2
-		:lang(language)	p:lang(it)	选择带有以 "it" 开头的 lang 属性值的每个 <p> 元素。	2
-		element1~element2	p~ul	选择前面有 <p> 元素的每个 <ul> 元素。	3
-		[attribute^=value]	a[src^="https"]	选择其 src 属性值以 "https" 开头的每个 <a> 元素。	3
-		[attribute$=value]	a[src$=".pdf"]	选择其 src 属性以 ".pdf" 结尾的所有 <a> 元素。	3
-		[attribute*=value]	a[src*="abc"]	选择其 src 属性中包含 "abc" 子串的每个 <a> 元素。	3
-		:first-of-type	p:first-of-type	选择属于其父元素的首个 <p> 元素的每个 <p> 元素。	3
-		:last-of-type	p:last-of-type	选择属于其父元素的最后 <p> 元素的每个 <p> 元素。	3
-		:only-of-type	p:only-of-type	选择属于其父元素唯一的 <p> 元素的每个 <p> 元素。	3
-		:only-child	p:only-child	选择属于其父元素的唯一子元素的每个 <p> 元素。	3
-		:nth-child(n)	p:nth-child(2)	选择属于其父元素的第二个子元素的每个 <p> 元素。	3
-		:nth-last-child(n)	p:nth-last-child(2)	同上，从最后一个子元素开始计数。	3
-		:nth-of-type(n)	p:nth-of-type(2)	选择属于其父元素第二个 <p> 元素的每个 <p> 元素。	3
-		:nth-last-of-type(n)	p:nth-last-of-type(2)	同上，但是从最后一个子元素开始计数。	3
-		:last-child	p:last-child	选择属于其父元素最后一个子元素每个 <p> 元素。	3
-		:root	:root	选择文档的根元素。	3
-		:empty	p:empty	选择没有子元素的每个 <p> 元素（包括文本节点）。	3
-		:target	#news:target	选择当前活动的 #news 元素。	3
-		:enabled	input:enabled	选择每个启用的 <input> 元素。	3
-		:disabled	input:disabled	选择每个禁用的 <input> 元素	3
-		:checked	input:checked	选择每个被选中的 <input> 元素。	3
-		:not(selector)	:not(p)	选择非 <p> 元素的每个元素。	3
-		::selection	::selection	选择被用户选取的元素部分。
+	*:hover	a:hover	选择鼠标指针位于其上的链接。	1
+	*:focus	input:focus	选择获得焦点的 input 元素。	2
+	*:first-child	p:first-child	选择属于父元素的第一个子元素的每个 <p> 元素。	2
+	*:before	p:before	在每个 <p> 元素的内容之前插入内容。	2
+	*:after	p:after	在每个 <p> 元素的内容之后插入内容。	2
+	*[attribute^=value]	a[src^="https"]	选择其 src 属性值以 "https" 开头的每个 <a> 元素。	3
+	*[attribute$=value]	a[src$=".pdf"]	选择其 src 属性以 ".pdf" 结尾的所有 <a> 元素。	3
+	*:nth-child(n)	p:nth-child(2)	选择属于其父元素的第二个子元素的每个 <p> 元素。	3
+	*:disabled	input:disabled	选择每个禁用的 <input> 元素	3
+	*:checked	input:checked	选择每个被选中的 <input> 元素。	3
+	*::selection	::selection	选择被用户选取的元素部分。
+	*:last-child	p:last-child	选择属于其父元素最后一个子元素每个 <p> 元素。	3
+	*[attribute*=value]	a[src*="abc"]	选择其 src 属性中包含 "abc" 子串的每个 <a> 元素。	3
+	
+	:first-letter	p:first-letter	选择每个 <p> 元素的首字母。	1
+	:first-line	p:first-line	选择每个 <p> 元素的首行。	1
+	:lang(language)	p:lang(it)	选择带有以 "it" 开头的 lang 属性值的每个 <p> 元素。	2
+	element1~element2	p~ul	选择前面有 <p> 元素的每个 <ul> 元素。	3
+	:first-of-type	p:first-of-type	选择属于其父元素的首个 <p> 元素的每个 <p> 元素。	3
+	:last-of-type	p:last-of-type	选择属于其父元素的最后 <p> 元素的每个 <p> 元素。	3
+	:only-of-type	p:only-of-type	选择属于其父元素唯一的 <p> 元素的每个 <p> 元素。	3
+	:only-child	p:only-child	选择属于其父元素的唯一子元素的每个 <p> 元素。	3
+	:nth-last-child(n)	p:nth-last-child(2)	同上，从最后一个子元素开始计数。	3
+	:nth-of-type(n)	p:nth-of-type(2)	选择属于其父元素第二个 <p> 元素的每个 <p> 元素。	3
+	:nth-last-of-type(n)	p:nth-last-of-type(2)	同上，但是从最后一个子元素开始计数。	3
+	:root	:root	选择文档的根元素。	3
+	:empty	p:empty	选择没有子元素的每个 <p> 元素（包括文本节点）。	3
+	:target	#news:target	选择当前活动的 #news 元素。	3
+	:enabled	input:enabled	选择每个启用的 <input> 元素。	3
+	:not(selector)	:not(p)	选择非 <p> 元素的每个元素。	3
 			
 	margin	在一个声明中设置所有外边距属性。	1
 	margin-bottom	设置元素的下外边距。	1
@@ -315,9 +326,22 @@
 	padding-left	设置元素的左内边距。	1
 	padding-right	设置元素的右内边距。	1
 	padding-top	设置元素的上内边距。
+	
+	<table>	定义表格  隔行换色 选中换色
+	<caption>	定义表格标题。
+	<th>	定义表格中的表头单元格。
+	<tr>	定义表格中的行。
+	<td>	定义表格中的单元。
+	
+	
 	课后总结：
 第十课：
 	前情提要：
+	
+	
+	
+	<img>	定义图像。
+	
 	position定位
 	图片旋转
 	float
